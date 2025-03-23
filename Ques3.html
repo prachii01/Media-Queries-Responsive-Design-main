@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Masai School</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Welcome to Masai School</h1>
+  <p>This is a sample page with a responsive navbar.</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 Masai School. All rights reserved.</p>
+</footer>
+
+<script>
+    // Toggle hamburger menu
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

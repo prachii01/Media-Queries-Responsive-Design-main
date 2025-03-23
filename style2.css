@@ -1,0 +1,33 @@
+/* Mobile-first styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Mobile screens (default) */
+  p {
+    font-size: 14px;
+  }
+  
+  /* Larger screens - apply media queries */
+  @media screen and (min-width: 600px) {
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  /* For even larger screens, add more responsiveness if needed */
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 18px;
+    }
+  }
+  
